@@ -97,5 +97,5 @@ if (drawing.getContext){
 var submit = document.getElementById("submit");
 EventUtil.addHandler(submit, "click", function(event){
   var o = document.getElementsByTagName('iframe')[0];
-  o.contentWindow.postMessage("textbox.value", 'http://127.0.0.1:8080/iframe/index.html');
+  o.contentWindow.postMessage(textbox.value, "http://mywebd.imwork.net:9080/iframe/");
 });
